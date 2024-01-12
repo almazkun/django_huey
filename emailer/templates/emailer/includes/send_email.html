@@ -1,0 +1,13 @@
+{% block messages %}
+    {% include "includes/messages.html" %}
+{% endblock messages %}
+<h1 class="display-4">Send Email</h1>
+<form hx-post=""
+      hx-trigger="submit"
+      hx-target="#results-box"
+      hx-indicator=".progress">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Send</button>
+</form>
+</div>

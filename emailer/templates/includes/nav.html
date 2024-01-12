@@ -1,0 +1,8 @@
+<div class="navbar bg-light">
+    <div class="container">
+        <div class="nav">
+            <a class="nav-link ps-0{% if request.path == '/' %} lead fw-bold{% endif %}"
+               href="{% url 'send_email' %}">Send Email</a>
+        </div>
+    </div>
+</div>
